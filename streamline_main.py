@@ -20,16 +20,21 @@ else:
 button = st.button("click this button")
 if button: 
     st.write(":blue[buttone]is here :sparkles:")
-
 st.markdown('---')
-num1 = st.number_input('numebr1 input',
-                       min_val = 10, max_value = 100, step = 5)
+num1 = st.number_input('number 1 enter',
+                min_value = 10, max_value = 100, step = 5)
+num2 = st.number_input('number 2 enter',
+                min_value = 10, max_value = 100, step = 5)
+btn_calc = st.button('calculate')
+if btn_calc:
+    st.write(f"""
+             {num1} + {num2} = {num1 + num2}
+             {num1} + {num2} = {num1 - num2}
 
-num2 = st.number_input('numebr1 input',
-                       min_val = 10, max_value = 100, step = 5)
-btn_cal = st.button('calcuate')
+             """)
 
-if btn_cal:
-    st.markdown(f"""
-             {num1} + {num2} = {num1 + num2}""")
-        
+
+
+
+
+
